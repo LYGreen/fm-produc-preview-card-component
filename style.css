@@ -115,6 +115,8 @@ html, body {
             border-radius: 0.8rem;
             height: 4rem;
 
+            border-width: 0;
+
             cursor: pointer;
             
             transition: background-color 0.1s ease;
@@ -145,17 +147,24 @@ html, body {
 
 @media (min-width: 768px) {
     .container {
-        padding: 0 15vw;
+        padding: 0 25vw;
     }
 
     .card {
         flex-direction: row;
+        width: unset;
+        max-height: 75vh;
+
+        .image {
+            max-width: 50%;
+            object-fit: cover;
+            content: url('./images/image-product-desktop.jpg');
+        }
+
+        .content {
+            max-width: 50%;
+        }
     }
 
-    .image {
-        width: 50%;
-        max-height: 75vh;
-        object-fit: cover;
-        content: url('./images/image-product-desktop.jpg');
-    }
+
 }
