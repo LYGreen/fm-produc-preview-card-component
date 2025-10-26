@@ -67,7 +67,7 @@ html, body {
         
         .name {
             color: var(--gray);
-            font-size: 10px;
+            font-size: clamp(0.3rem, calc(0.5rem + 0.3vw), 0.8rem);
 
             text-transform: uppercase;
             letter-spacing: 0.3rem;
@@ -77,12 +77,12 @@ html, body {
         .title {
             color: var(--black);
             margin: 0.5rem 0;
-            font-size: 30px;
+            font-size: clamp(1.3rem, calc(1.2rem + 1vw), 1.8rem);
         }
 
         .description {
             color: var(--gray);
-
+            font-size: clamp(0.5rem, calc(0.6rem + 1vw), 1rem);
             margin: 0.8rem 0;
         }
 
@@ -95,11 +95,12 @@ html, body {
 
             .discount {
                 color: var(--green-500);
-                font-size: 24px;
+                font-size: clamp(1rem, calc(1.2rem + 1vw), 3rem);
             }
 
             .origin {
                 color: var(--gray);
+                font-size: clamp(0.5rem, calc(0.5rem + 1vw), 1rem);
                 text-decoration: line-through;
             }
         }
@@ -113,7 +114,7 @@ html, body {
 
             background-color: var(--green-500);
             border-radius: 0.8rem;
-            height: 4rem;
+            height: clamp(4rem, calc(4.2rem + 1.5vw), 4.5rem);
 
             border-width: 0;
 
